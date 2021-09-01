@@ -1,0 +1,15 @@
+.greetings {
+    display: flex;
+    margin: 202px 102px 0 102px;
+}
+
+.flex-right {
+    display: flex;
+    margin-left: auto;
+}
+
+.flex-right img {
+    border-radius: 50%;
+    width: 242px;
+    height: 242px;
+}

@@ -1,0 +1,8 @@
+.main-page {
+    margin: 0 53px 0 53px;
+    display: block;
+}
+
+.main-page > * {
+    z-index: 3;
+}

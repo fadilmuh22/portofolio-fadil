@@ -1,0 +1,23 @@
+.top-nav {
+    display: flex;
+    margin: 53px 53px 0 auto;
+    width: max-content;
+}
+
+.top-nav > .nav-link {
+    display: block;
+    margin-right: 53px;
+    cursor: pointer;
+    font-size: 28px;
+    text-decoration: none;
+    color: black;
+}
+
+.top-nav > .nav-link.active::after {
+    content: '';
+    background-image: url('../assets/nav-arrow.png');
+    width: 10px;
+    height: 10px;
+    display: flex;
+    margin: 0 auto;
+}

@@ -1,23 +1,20 @@
-function NavLink({ name = '', active = false }) {
-  return (
-    <div className="nav-link">
-      <p>{name}</p>
-      {active ? (
-        <div>
-          <img src="" />
-        </div>
-      ) : (
-        <></>
-      )}
-    </div>
-  );
-}
+import '../styles/TopNav.css';
+import { NavLink } from 'react-router-dom';
 
 export default function TopNav() {
-  return (
-    <div className="top-nav">
-      <NavLink name="Home" active={false} />
-      <NavLink name="Blog" active={false} />
-    </div>
-  );
+    return (
+        <div className="top-nav">
+            <NavLink exact to="/" className="nav-link" activeClassName="active">
+                Home
+            </NavLink>
+            <NavLink
+                exact
+                to="/blog"
+                className="nav-link"
+                activeClassName="active"
+            >
+                Blog
+            </NavLink>
+        </div>
+    );
 }
