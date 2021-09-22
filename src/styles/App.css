@@ -10,11 +10,6 @@ body {
 
 .App {
     display: block;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
 
     background-color: #c4c4c4;
 }
@@ -46,4 +41,9 @@ body {
 
     background: rgba(24, 164, 137, 0.06);
     filter: blur(4px);
+}
+
+.section {
+    display: flex;
+    margin: 0 102px 0 102px;
 }

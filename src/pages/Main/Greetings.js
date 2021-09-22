@@ -3,7 +3,7 @@ import ProfpicFadil from '../../assets/profpic-fadil.png';
 
 export default function Greetings() {
     return (
-        <div className="greetings">
+        <div id="greetings" className="section">
             <div className="flex-left">
                 <p style={{ fontSize: '24px' }}>Hello, I'am</p>
                 <h1 style={{ fontSize: '72px', fontWeight: 'bold' }}>

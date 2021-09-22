@@ -1,6 +1,6 @@
 .bottom-nav {
     display: flex;
-    position: absolute;
+    position: fixed;
     bottom: 53px;
     left: 104px;
 }

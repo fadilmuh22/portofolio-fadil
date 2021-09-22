@@ -1,6 +1,6 @@
-.greetings {
-    display: flex;
-    margin: 202px 102px 0 102px;
+#greetings {
+    margin-top: 255px;
+    height: 72vh;
 }
 
 .flex-right {

@@ -1,7 +1,14 @@
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Redirect,
+} from 'react-router-dom';
+
 import './styles/App.css';
 import TopNav from './components/TopNav';
 import Main from './pages/Main/Main';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import BottomNav from './components/BottomNav';
 
 function App() {
     return (
@@ -11,9 +18,18 @@ function App() {
                 <div className="blur"></div>
                 <TopNav />
                 <Switch>
-                    <Route exact strict path="/" component={Main} />
+                    <Route
+                        exact
+                        path="/"
+                        render={() => {
+                            return <Redirect to="/home" />;
+                        }}
+                    />
+                    <Route exact strict path="/home" component={Main} />
                     <Route exact strict path="/blog" component={Main} />
                 </Switch>
+
+                <BottomNav name="Greetings" />
             </div>
         </Router>
     );

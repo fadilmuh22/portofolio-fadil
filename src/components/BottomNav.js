@@ -7,7 +7,7 @@ export default function BottomNav({ name }) {
         <div className="bottom-nav">
             <NavHashLink
                 className="bottom-nav-link"
-                to="/some/path#with-hash-fragment"
+                to="/home#greetings"
                 activeClassName="active"
                 activeStyle={{ color: 'red' }}
             >
@@ -15,7 +15,7 @@ export default function BottomNav({ name }) {
             </NavHashLink>
             <NavHashLink
                 className="bottom-nav-link"
-                to="/some/path#with-hash-fragment"
+                to="/home#eperiences"
                 activeClassName="active"
                 activeStyle={{ color: 'red' }}
             >
@@ -23,7 +23,7 @@ export default function BottomNav({ name }) {
             </NavHashLink>
             <NavHashLink
                 className="bottom-nav-link"
-                to="/some/path#with-hash-fragment"
+                to="/home#educations"
                 activeClassName="active"
                 activeStyle={{ color: 'red' }}
             >
