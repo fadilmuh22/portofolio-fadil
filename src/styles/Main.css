@@ -3,6 +3,6 @@
     display: block;
 }
 
-.main-page > * {
+.main-page * {
     z-index: 3;
 }

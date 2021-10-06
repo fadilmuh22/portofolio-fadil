@@ -2,7 +2,7 @@ import '../styles/BottomNav.css';
 
 import { NavHashLink } from 'react-router-hash-link';
 
-export default function BottomNav({ name }) {
+export default function BottomNav({ names }) {
     return (
         <div className="bottom-nav">
             <NavHashLink
@@ -11,15 +11,15 @@ export default function BottomNav({ name }) {
                 activeClassName="active"
                 activeStyle={{ color: 'red' }}
             >
-                <button>{name}</button>
+                <button>{names[0]}</button>
             </NavHashLink>
             <NavHashLink
                 className="bottom-nav-link"
-                to="/home#eperiences"
+                to="/home#experiences"
                 activeClassName="active"
                 activeStyle={{ color: 'red' }}
             >
-                <button>{name}</button>
+                <button>{names[1]}</button>
             </NavHashLink>
             <NavHashLink
                 className="bottom-nav-link"
@@ -27,7 +27,7 @@ export default function BottomNav({ name }) {
                 activeClassName="active"
                 activeStyle={{ color: 'red' }}
             >
-                <button>{name}</button>
+                <button>{names[2]}</button>
             </NavHashLink>
         </div>
     );

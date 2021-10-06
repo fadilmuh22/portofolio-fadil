@@ -1,17 +1,19 @@
 .bottom-nav {
+    z-index: 3;
     display: flex;
     position: fixed;
-    bottom: 53px;
+    bottom: 42px;
     left: 104px;
 }
 
-.bottom-nav-link {
+.bottom-nav-link:not(:first-child) {
     margin-left: 62px;
 }
 
 .bottom-nav-link button {
-    font-size: 28px;
-    padding: 24px 74px;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 24px 62px;
 
     background: #c4c4c4;
     border: 1px rgba(250, 242, 242, 0.25);

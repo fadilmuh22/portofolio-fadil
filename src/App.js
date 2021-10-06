@@ -1,3 +1,4 @@
+import React from 'react';
 import {
     BrowserRouter as Router,
     Switch,
@@ -11,6 +12,9 @@ import Main from './pages/Main/Main';
 import BottomNav from './components/BottomNav';
 
 function App() {
+
+    const bottomNavNames = ["Greetins", "Experiences", "Educations"];
+
     return (
         <Router>
             <div className="App">
@@ -29,7 +33,7 @@ function App() {
                     <Route exact strict path="/blog" component={Main} />
                 </Switch>
 
-                <BottomNav name="Greetings" />
+                <BottomNav names={bottomNavNames} />
             </div>
         </Router>
     );

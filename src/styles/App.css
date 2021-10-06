@@ -14,12 +14,8 @@ body {
     background-color: #c4c4c4;
 }
 
-.App > * {
-    z-index: 3;
-}
-
 .circle {
-    position: absolute;
+    position: fixed;
     border-radius: 50%;
     width: 520px;
     height: 520px;
@@ -37,7 +33,7 @@ body {
     height: 100%;
     left: 0;
     top: 0;
-    z-index: 2;
+    z-index: 1;
 
     background: rgba(24, 164, 137, 0.06);
     filter: blur(4px);
@@ -45,5 +41,8 @@ body {
 
 .section {
     display: flex;
-    margin: 0 102px 0 102px;
+    margin: 0 102px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }

@@ -1,0 +1,38 @@
+#experiences.section {
+    display: block;
+    padding-top: 20px;
+}
+
+.exp-card {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding: 40px;
+    max-width: 320px;
+    height: 420px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* #c4c4c4; */
+    background: url('../assets/exp-card-bg.png');
+    border: 3px solid #fff9f9;
+    box-shadow: 0px 4px 4px rgba(250, 242, 242, 0.25);
+    border-radius: 7px;
+}
+.tech-logos-container {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.tech-logo {
+    border-radius: 50%;
+    width: 62px;
+    height: 62px;
+    background-color: rgba(255, 249, 249, 0.42);
+}
+
+.tech-logo:not(:first-child) {
+    margin-left: 16px;
+}

@@ -1,6 +1,9 @@
-#greetings {
-    margin-top: 255px;
-    height: 72vh;
+.greetings-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: -80px;
 }
 
 .flex-right {
