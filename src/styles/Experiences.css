@@ -1,6 +1,17 @@
 #experiences.section {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     padding-top: 20px;
+}
+
+.carousel {
+    max-width: 520px;
+}
+
+.exp-title {
+    display: flex;
+    width: 100%;
 }
 
 .exp-card {
@@ -13,12 +24,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* #c4c4c4; */
-    background: url('../assets/exp-card-bg.png');
-    border: 3px solid #fff9f9;
-    box-shadow: 0px 4px 4px rgba(250, 242, 242, 0.25);
+    /* rgba(255, 249, 249, 0.78); */
+    background: #c4c4c4;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     border-radius: 7px;
 }
+
 .tech-logos-container {
     margin-top: 20px;
     display: flex;
@@ -26,6 +38,7 @@
     flex-direction: row;
     justify-content: flex-start;
 }
+
 .tech-logo {
     border-radius: 50%;
     width: 62px;

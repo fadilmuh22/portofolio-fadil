@@ -4,7 +4,6 @@ import '../../styles/Main.css';
 
 import Greetings from './Greetings';
 import Experiences from './Experiences';
-import Educations from './Educations';
 // import useOnScreen from '../../hooks/useOnScreen';
 
 export default function Main() {
@@ -12,7 +11,6 @@ export default function Main() {
         <div className="main-page">
             <Greetings />
             <Experiences />
-            <Educations />
         </div>
     );
 }

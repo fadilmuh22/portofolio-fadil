@@ -21,6 +21,7 @@ export default function Experiences() {
         speed: 200,
         slidesToShow: 1,
         slidesToScroll: 1,
+        swipeToSlide: true,
     };
 
     const techLogos = {
@@ -72,7 +73,7 @@ export default function Experiences() {
             <div style={{ marginTop: '52px' }} className="carousel">
                 <Slider {...settings}>
                     {myExperieneces.map((exp, i) => (
-                        <div className="exp-card-container">
+                        <div className="exp-card-container" key={i}>
                             <div className="exp-card">
                                 <div className="exp-logo">
                                     <div
